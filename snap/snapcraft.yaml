@@ -12,9 +12,11 @@ confinement: devmode
 parts:
   pgweb:
     source-type: git
-    source: github.com/sosedoff/pgweb
+    source: https://github.com/sosedoff/pgweb.git
     plugin: go
     go-importpath: github.com/sosedoff/pgweb
+    build-packages:
+      - gcc
 
 apps:
   pgweb:
